@@ -15,7 +15,38 @@
        <label>メールアドレス</label><input type="text" name="email"><br><br>
        <!-- submitボタン -->
        <input type="submit" name="送信">
-</form>       
+</form>    
+	    
+window.addEventListener('DOMContentLoaded', function() {
+var visitorIdInput = document.getElementById('visitor-id');
+
+<!-- // visitor_idの取得処理 -->
+var visitor_id = getVisitorIdFromCookie();
+
+<!-- // テキストフォームにvisitor_idを設定 -->
+visitorIdInput.value = visitor_id;
+
+<!-- // テキストフォームの値をクリップボードにコピー -->
+visitorIdInput.select();
+visitorIdInput.setSelectionRange(0, 99999); // テキスト全体を選択
+document.execCommand('copy');
+
+alert(document.cookie);
+	
+});
+
+function getVisitorIdFromCookie() {
+var cookies = document.cookie.split('; ');
+
+for (var i = 0; i < cookies.length; i++) {
+var cookie = cookies[i].split('=');
+var name = cookie[0];
+var value = cookie[1];
+
+if (name === 'visitor_id') {
+return value;
+}
+	    
       <script type='text/javascript'>
 piAId = '985341';
 piCId = '75640';
