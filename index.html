@@ -21,13 +21,13 @@
 window.addEventListener('DOMContentLoaded', function() {
 var visitorIdInput = document.getElementById('visitor-id');
 
-<!-- // visitor_idの取得処理 -->
+// visitor_idの取得処理 -->
 var visitor_id = getVisitorIdFromCookie();
 
-<!-- // テキストフォームにvisitor_idを設定 -->
+// テキストフォームにvisitor_idを設定 -->
 visitorIdInput.value = visitor_id;
 
-<!-- // テキストフォームの値をクリップボードにコピー -->
+ // テキストフォームの値をクリップボードにコピー -->
 visitorIdInput.select();
 visitorIdInput.setSelectionRange(0, 99999); // テキスト全体を選択
 document.execCommand('copy');
@@ -46,7 +46,7 @@ var value = cookie[1];
 
 if (name === 'visitor_id') {
 return value;
-}
+}}
 
 return '';
 }
