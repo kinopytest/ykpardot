@@ -11,7 +11,7 @@
         Hello World
 	<!-- Pardotで確認したFH連携用のコードをコピペ -->
 <form action="https://yk.kinopy.xyz/l/984341/2023-05-01/bgh2x" method="post">
-       <!-- まずは必須項目だけ連携 -->
+<!--        まずは必須項目だけ連携 -->
        <label>メールアドレス</label><input type="text" name="email"><br><br>
        <!-- submitボタン -->
        <input type="submit" name="送信">
@@ -19,27 +19,28 @@
 
 <p><a href="https://yk.kinopy.xyz/l/984341/2022-07-12/9yzl8?utm_campaign=GAtest_campaign" target="_blank">UTMが入ったリンク</a></p>
 
-	    
-<script>
+
+<!-- document.cookie でVisitor IDを取得するコード -->
+<!-- <script>
 window.addEventListener('DOMContentLoaded', function() {
 var visitorIdInput = document.getElementById('visitor-id');
 
 // visitor_idの取得処理 -->
-var visitor_id = getVisitorIdFromCookie();
+<!-- var visitor_id = getVisitorIdFromCookie();
 
 // テキストフォームにvisitor_idを設定 -->
-visitorIdInput.value = visitor_id;
+<!-- visitorIdInput.value = visitor_id;
 
  // テキストフォームの値をクリップボードにコピー -->
-visitorIdInput.select();
+<!-- visitorIdInput.select();
 visitorIdInput.setSelectionRange(0, 99999); // テキスト全体を選択
 document.execCommand('copy');
 
-alert(document.cookie);
+alert(document.cookie); -->
 	
-});
-
-function getVisitorIdFromCookie() {
+<!-- });
+ -->
+<!-- function getVisitorIdFromCookie() {
 var cookies = document.cookie.split('; ');
 
 for (var i = 0; i < cookies.length; i++) {
@@ -47,22 +48,23 @@ var cookie = cookies[i].split('=');
 var name = cookie[0];
 var value = cookie[1];
 
-if (name === 'visitor_id') {
-return value;
-}}
+if (name === 'visitor_id') { -->
+<!-- return value;
+}} -->
 
-return '';
+<!-- return '';
 }
-</script>
+</script> -->
 
-<h1>Visitor ID Copy</h1>
+<!-- <h1>Visitor ID Copy</h1>
 
-<form>
+<!-- <form>
 <label for="visitor-id">Visitor ID:</label>
 <input id="visitor-id" type="text" />
-</form>
+</form> --> -->
+<!--ここまで  -->
 	    
-<!--       <script type='text/javascript'>
+      <script type='text/javascript'>
 piAId = '985341';
 piCId = '75640';
 piHostname = 'yk.kinopy.xyz';
@@ -75,7 +77,7 @@ piHostname = 'yk.kinopy.xyz';
 	}
 	if(window.attachEvent) { window.attachEvent('onload', async_load); }
 	else { window.addEventListener('load', async_load, false); }
-})(); -->
+})();
 </script>
     </body>
 </html>
