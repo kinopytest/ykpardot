@@ -84,7 +84,7 @@ if (name === 'visitor_id') { -->
 </form> -->
 <!--ここまで  -->
 
-<script>
+<!-- <script>
     var piDomain = 'sf.kinopy.xyz'; // format of 'go.example.com'
 
     (function() {
@@ -107,9 +107,9 @@ if (name === 'visitor_id') { -->
       console.log(status, title, url, referrer, piEmail, utmCampaign);
     });
     pdt('sendPageView');
- </script>
+ </script> -->
 
-	 <button type="button" id="show_banner_button" onClick="pdt('showConsentBanner')">
+<!-- 	 <button type="button" id="show_banner_button" onClick="pdt('showConsentBanner')">
         Cookie Consent Settings
       </button>
       <button type="button" id="cookie_clear_button" onClick="pdt('clearTrackingCookies')">
@@ -117,22 +117,22 @@ if (name === 'visitor_id') { -->
       </button>
       <button type="button" id="revokeConsent_button" onClick="pdt('revokeConsent')">
         revokeConsent
-      </button>
+      </button> -->
 	    
-<!-- // <script type='text/javascript'> -->
-<!-- // piAId = '985341';
-// piCId = '75640';
-// piHostname = 'sf.kinopy.xyz';
+<script type='text/javascript'> -->
+piAId = '985341';
+piCId = '75640';
+piHostname = 'sf.kinopy.xyz';
 
-// (function() {
-// 	function async_load(){
-// 		var s = document.createElement('script'); s.type = 'text/javascript';
-// 		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
-// 		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
-// 	}
-// 	if(window.attachEvent) { window.attachEvent('onload', async_load); }
-// 	else { window.addEventListener('load', async_load, false); }
-// })();
-// </script> -->
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
 	    
     </body>
