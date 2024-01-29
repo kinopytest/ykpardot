@@ -126,8 +126,25 @@ if (name === 'visitor_id') { -->
       <button type="button" id="revokeConsent_button" onClick="pdt('revokeConsent')">
         revokeConsent
       </button> -->
+
+<!--トラッカードメインが違う  -->
+<script type='text/javascript'>
+piAId = '985341';
+piCId = '';
+piHostname = 'go.pdtyktest.net';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
 	    
-<script type='text/javascript'> -->
+<!-- <script type='text/javascript'>
 piAId = '985341';
 piCId = '75640';
 piHostname = 'sf.kinopy.xyz';
@@ -141,6 +158,6 @@ piHostname = 'sf.kinopy.xyz';
 	if(window.attachEvent) { window.attachEvent('onload', async_load); }
 	else { window.addEventListener('load', async_load, false); }
 })();
-</script>
+</script> -->
 	    
     </body>
