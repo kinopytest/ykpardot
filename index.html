@@ -32,21 +32,24 @@
 
 <!-- FH 検証用-->
 
-/* 画面全体の背景色とフォント設定 */
+<!-- /* 画面全体の背景色とフォント設定 */ -->
     body {
       font-family: sans-serif;
       background-color: #f4f7f6;
       padding: 20px;
     }
 
-    /* フォームの外枠の設定 */
+    <!-- /* フォームの外枠の設定 */ -->
     .form-container {
       max-width: 500px;
-      margin: 0 auto; /* 中央揃え */
+	 <!-- /* 中央揃え */ -->
+      margin: 0 auto;
       background: #ffffff;
       padding: 30px;
-      border-radius: 8px; /* 角丸 */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 影の追加 */
+	<!-- /* 角丸 */ -->
+      border-radius: 8px; 
+	<!-- /* 影の追加 */ -->
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
     }
 
     fieldset {
@@ -62,12 +65,12 @@
       color: #333333;
     }
 
-    /* 各入力項目のグループごとの余白 */
+    <!-- /* 各入力項目のグループごとの余白 */ -->
     .form-group {
       margin-bottom: 20px;
     }
 
-    /* ラベル（項目名）の設定 */
+    <!-- /* ラベル（項目名）の設定 */ -->
     label {
       display: block;
       margin-bottom: 8px;
@@ -75,23 +78,27 @@
       color: #555555;
     }
 
-    /* 入力欄（テキスト、メール、テキストエリア）の共通設定 */
+    <!-- /* 入力欄（テキスト、メール、テキストエリア）の共通設定 */ -->
     input[type="text"],
     input[type="email"],
     textarea {
-      width: 100%; /* 横幅いっぱいにする */
+	<!-- /* 横幅いっぱいにする */ -->
+      width: 100%; 
       padding: 10px;
       border: 1px solid #cccccc;
       border-radius: 4px;
-      box-sizing: border-box; /* paddingを含めた幅計算にする */
-      font-size: 16px; /* スマートフォンでの自動ズーム防止 */
+	<!-- /* paddingを含めた幅計算にする */ -->
+      box-sizing: border-box; 
+	<!-- /* スマートフォンでの自動ズーム防止 */ -->
+      font-size: 16px; 
     }
 
     textarea {
-      resize: vertical; /* 縦方向のみサイズ変更を許可 */
+      resize: vertical; 
+	<!-- /* 縦方向のみサイズ変更を許可 */ -->
     }
 
-    /* 送信ボタンの設定 */
+    <!-- /* 送信ボタンの設定 */ -->
     input[type="submit"] {
       width: 100%;
       padding: 12px;
@@ -104,7 +111,7 @@
       cursor: pointer;
     }
 
-    /* 送信ボタンにマウスカーソルを合わせたときの色の変化 */
+    <!-- /* 送信ボタンにマウスカーソルを合わせたときの色の変化 */ -->
     input[type="submit"]:hover {
       background-color: #0056b3;
     }
