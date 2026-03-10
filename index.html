@@ -83,13 +83,61 @@
     input[type="submit"]:hover {
       background-color: #0056b3;
     }
+
+/* ボタンの装飾 */
+	/* ボタンを横に並べるコンテナの設定 */
+    .button-container {
+      display: flex;
+      gap: 20px; /* ボタン同士の間隔 */
+      justify-content: center; /* 中央揃え */
+      padding: 40px;
+    }
+
+    /* ボタンの共通スタイル */
+    .nav-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #007bff; /* メインの青色 */
+      color: #ffffff; /* 文字色を白に */
+      text-decoration: none; /* リンクの下線を消す */
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px; /* 角を丸くする */
+      text-align: center;
+      transition: background-color 0.3s, transform 0.1s; /* アニメーションの速度設定 */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影をつける */
+    }
+
+    /* マウスカーソルが乗ったとき（ホバー時）のスタイル */
+    .nav-button:hover {
+      background-color: #0056b3; /* 少し暗い青色に変化 */
+    }
+
+    /* クリックされた瞬間のスタイル（押し込み効果） */
+    .nav-button:active {
+      transform: translateY(2px); /* 下に2px移動 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を小さくする */
+    }
+
+    /* 2つ目のボタン（サブボタン）の個別スタイル */
+    .nav-button.secondary {
+      background-color: #6c757d; /* グレーの背景色 */
+    }
+
+    .nav-button.secondary:hover {
+      background-color: #5a6268; /* 少し暗いグレーに変化 */
+    }
   </style>
     </head>
 	
 <body　bgcolor="#009EDB">
+
+	
 <h1 align="center">Account Engagement 用の検証サイトです。</h1>
-<h3><a href="page1/">Web-to-Leadの検証ページへ</a></h3>
-<h3><a href="page2/">検証ページ2へ</a></h3>
+<div class="button-container">
+<a href="page1/" class="nav-button">ページ1（web-to-lead 検証ページ）へ移動</a>
+<a href="page2/" class="nav-button secondary">ページ2へ移動</a>
+  </div>
 <br>
 
 <!-- ==================================================================================================================================================================================================== -->	
