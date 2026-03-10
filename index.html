@@ -11,7 +11,7 @@
 <body　bgcolor="#009EDB">
 <h1 align="center">Account Engagement 用の検証サイトです。</h1>
 <h3><a href="page1/">Web-to-Leadの検証ページへ</a></h3>
-<h3><a href="page2/">Web-to-Leadの検証ページへ</a></h3>
+<h3><a href="page2/">検証ページ2へ</a></h3>
 <br>
 
 <!-- ==================================================================================================================================================================================================== -->	
@@ -31,19 +31,123 @@
 </p> -->
 
 <!-- FH 検証用-->
-	
-<p>フォームハンドラーの検証（「Heroku サイトとの接続」のFHと連携）</p>
-	
-<form action="https://ykmcae.jp-edi.page/l/984341/2023-05-01/bgh2x" method="post">
-<label>メールアドレス：</label><input type="text" name="email"><br>
-<label>姓：</label><input type="text" name="lastname" maxlength="255" value="" placeholder="255 文字以内"><br>
-<label>名：</label><input type="text" name="firstname" maxlength="255" value="" placeholder="255 文字以内"><br><br>
-<label>テキスト入力（テキストエリア）：</label><br><br><textarea name="comme" cols="50" rows="10" value=""></textarea><br><br> 
-<label>会社：</label><input type="text" name="company" maxlength="255" value="" placeholder="255 文字以内（必須）"><br><br>
+
+/* 画面全体の背景色とフォント設定 */
+    body {
+      font-family: sans-serif;
+      background-color: #f4f7f6;
+      padding: 20px;
+    }
+
+    /* フォームの外枠の設定 */
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto; /* 中央揃え */
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 8px; /* 角丸 */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 影の追加 */
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    legend {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333333;
+    }
+
+    /* 各入力項目のグループごとの余白 */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    /* ラベル（項目名）の設定 */
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #555555;
+    }
+
+    /* 入力欄（テキスト、メール、テキストエリア）の共通設定 */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%; /* 横幅いっぱいにする */
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      box-sizing: border-box; /* paddingを含めた幅計算にする */
+      font-size: 16px; /* スマートフォンでの自動ズーム防止 */
+    }
+
+    textarea {
+      resize: vertical; /* 縦方向のみサイズ変更を許可 */
+    }
+
+    /* 送信ボタンの設定 */
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* 送信ボタンにマウスカーソルを合わせたときの色の変化 */
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form action="https://ykmcae.jp-edi.page/l/984341/2023-05-01/bgh2x" method="post">
+      <fieldset>
+        <legend>お問い合わせ情報</legend>
+
+        <div class="form-group">
+          <label for="last_name">姓：</label>
+          <input type="text" id="last_name" name="lastname" placeholder="例: 山田">
+        </div>
+
+        <div class="form-group">
+          <label for="first_name">名：</label>
+          <input type="text" id="first_name" name="firstname" placeholder="例: 太郎">
+        </div>
+
+        <div class="form-group">
+          <label for="email">メールアドレス：</label>
+          <input type="email" id="email" name="email" placeholder="例: sample@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="company">会社名：</label>
+          <input type="text" id="company" name="company" placeholder="例: 株式会社サンプル">
+        </div>
+
+        <div class="form-group">
+          <label for="message">テキストエリア：</label>
+          <textarea id="message" name="comme" rows="5" placeholder="ご入力ください"></textarea>
+        </div>
+
 <!-- <label>非表示項目：</label><input type="hidden" name="hiddenfield" value="true"><br> -->
 <!-- <input type="hidden" name="hiddenfield" value="非表示項目"> -->
-<input type="submit" name="送信">
-</form>
+
+        <input type="submit" value="送信する">
+      </fieldset>
+    </form>
+  </div>
 
 <!-- ==================================================================================================================================================================================================== -->
 <!-- 非表示項目テスト-->
