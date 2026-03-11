@@ -6,11 +6,49 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="description" content="Pardot Website 検証用"/>
         <title>Pardot Website 検証＿ページ2</title>
+		<style>
+	/* ボタンの装飾 */
+	/* ボタンを横に並べるコンテナの設定 */
+    .button-container {
+      display: flex;
+      gap: 20px; /* ボタン同士の間隔 */
+      justify-content: center; /* 中央揃え */
+      padding: 40px;
+    }
+
+    /* ボタンの共通スタイル */
+    .nav-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #007bff; /* メインの青色 */
+      color: #ffffff; /* 文字色を白に */
+      text-decoration: none; /* リンクの下線を消す */
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px; /* 角を丸くする */
+      text-align: center;
+      transition: background-color 0.3s, transform 0.1s; /* アニメーションの速度設定 */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影をつける */
+    }
+
+    /* マウスカーソルが乗ったとき（ホバー時）のスタイル */
+    .nav-button:hover {
+      background-color: #0056b3; /* 少し暗い青色に変化 */
+    }
+
+    /* クリックされた瞬間のスタイル（押し込み効果） */
+    .nav-button:active {
+      transform: translateY(2px); /* 下に2px移動 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を小さくする */
+    }
+		</style>
     </head>
 <body>
 <h1 align="center">Account Engagement 用の検証サイトです。</h1>
 
-
+<div class="button-container">
+<a href="https://ykhrk.jp-edi.page/" class="nav-button">ホームへ移動</a>
+  </div>
 <!-- トラッキングコード   -->
 <script type='text/javascript'>
 piAId = '985341';
