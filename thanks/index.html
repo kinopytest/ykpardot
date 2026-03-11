@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="" >
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Pardot Website 検証用"/>
+        <title>Pardot Website 検証＿Thanks ページ</title>
+		<style>
+	/* 画面全体のレイアウトを中央揃えにする設定 */
+    body {
+      font-family: sans-serif;
+      background-color: #f4f7f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
 
+    /* 白いカード部分のデザイン */
+    .thanks-card {
+      background-color: #ffffff;
+      max-width: 600px;
+      width: 100%;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    /* 完了を示すチェックマークのアイコン */
+    .success-icon {
+      font-size: 60px;
+      color: #28a745; /* 成功・安全を意味する緑色 */
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    /* メッセージ本文の背景と余白 */
+    .message {
+      font-size: 1em;
+      color: #555555;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      text-align: left; /* 長文は左揃えのほうが読みやすいため */
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    /* トップページへ戻るボタンのデザイン */
+    .return-button {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #007bff;
+      color: #ffffff;
+      text-decoration: none; /* リンクの下線を消す */
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .return-button:hover {
+      background-color: #0056b3;
+    }
+		</style>
+    </head>
+<body>
+<h1 align="center">Account Engagement 用の検証サイトです。</h1>
+
+<div class="thanks-card">
+    <div class="success-icon">&#10004;</div>
+    <h1>お問い合わせの送信が完了いたしました</h1>
+    
+    <div class="message">
+      <p>この度はお問い合わせいただき、誠にありがとうございます。</p>
+      <p>ご入力いただいたメールアドレス宛に、受付完了の自動返信メールを送信いたしました。担当者にて内容を確認のうえ、数営業日以内にご連絡させていただきます。</p>
+      <p>万が一、しばらく経っても自動返信メールが届かない場合は、入力されたメールアドレスに誤りがあるか、迷惑メールフォルダに振り分けられている可能性がございます。<br>その際は、お手数ですが再度フォームよりお問い合わせいただくか、お電話にてご連絡をお願いいたします。</p>
+    </div>
+
+    <a href="https://ykhrk.jp-edi.page/" class="return-button">トップページへ戻る</a>
+  </div>
+<!-- トラッキングコード   -->
+<script type='text/javascript'>
+piAId = '985341';
+piCId = '75640';
+piHostname = 'ykmcae.jp-edi.page';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+</body>
+</html>
