@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="" >
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Pardot Website 検証用"/>
+        <title>Pardot Website 検証＿ページ3</title>
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+		<style>
+	/* ボタンの装飾 */
+	/* ボタンを横に並べるコンテナの設定 */
+    .button-container {
+      display: flex;
+      gap: 20px; /* ボタン同士の間隔 */
+      justify-content: center; /* 中央揃え */
+      padding: 40px;
+    }
 
+    /* ボタンの共通スタイル */
+    .nav-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #007bff; /* メインの青色 */
+      color: #ffffff; /* 文字色を白に */
+      text-decoration: none; /* リンクの下線を消す */
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px; /* 角を丸くする */
+      text-align: center;
+      transition: background-color 0.3s, transform 0.1s; /* アニメーションの速度設定 */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影をつける */
+    }
+
+    /* マウスカーソルが乗ったとき（ホバー時）のスタイル */
+    .nav-button:hover {
+      background-color: #0056b3; /* 少し暗い青色に変化 */
+    }
+
+    /* クリックされた瞬間のスタイル（押し込み効果） */
+    .nav-button:active {
+      transform: translateY(2px); /* 下に2px移動 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を小さくする */
+    }
+		</style>
+    </head>
+<body>
+<h1 align="center">Account Engagement 用の検証サイトです。</h1>
+
+<div class="button-container">
+<a href="https://ykhrk.jp-edi.page/" class="nav-button">ホームへ移動</a>
+  </div>
+<!-- トラッキングコード   -->
+<script type='text/javascript'>
+piAId = '985341';
+piCId = '75640';
+piHostname = 'ykmcae.jp-edi.page';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+</body>
+</html>
