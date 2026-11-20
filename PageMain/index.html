@@ -1,1 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="" >
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Pardot Website 検証用"/>
+        <title>Account Engagement (Pardot)の検証ページ</title>
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+		<style>
+    /* 画面全体の背景色とフォント設定 */
+    body {
+      font-family: sans-serif;
+      background-color: #f4f7f6;
+      padding: 20px;
+    }
 
+    /* フォームの外枠の設定 */
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto; /* 中央揃え */
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 8px; /* 角丸 */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 影の追加 */
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    legend {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333333;
+    }
+
+    /* 各入力項目のグループごとの余白 */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    /* ラベル（項目名）の設定 */
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #555555;
+    }
+
+    /* 入力欄（テキスト、メール、テキストエリア）の共通設定 */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%; /* 横幅いっぱいにする */
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      box-sizing: border-box; /* paddingを含めた幅計算にする */
+      font-size: 16px; /* スマートフォンでの自動ズーム防止 */
+    }
+
+    textarea {
+      resize: vertical; /* 縦方向のみサイズ変更を許可 */
+    }
+
+    /* 送信ボタンの設定 */
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* 送信ボタンにマウスカーソルを合わせたときの色の変化 */
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+/* ボタンの装飾 */
+	/* ボタンを横に並べるコンテナの設定 */
+    .button-container {
+      display: flex;
+      gap: 20px; /* ボタン同士の間隔 */
+      justify-content: center; /* 中央揃え */
+      padding: 40px;
+    }
+
+    /* ボタンの共通スタイル */
+    .nav-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #007bff; /* メインの青色 */
+      color: #ffffff; /* 文字色を白に */
+      text-decoration: none; /* リンクの下線を消す */
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px; /* 角を丸くする */
+      text-align: center;
+      transition: background-color 0.3s, transform 0.1s; /* アニメーションの速度設定 */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影をつける */
+    }
+
+    /* マウスカーソルが乗ったとき（ホバー時）のスタイル */
+    .nav-button:hover {
+      background-color: #0056b3; /* 少し暗い青色に変化 */
+    }
+
+    /* クリックされた瞬間のスタイル（押し込み効果） */
+    .nav-button:active {
+      transform: translateY(2px); /* 下に2px移動 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を小さくする */
+    }
+
+    /* 2つ目のボタン（サブボタン）の個別スタイル */
+    .nav-button.secondary {
+      background-color: #FFD700; /* ゴールドの背景色 */
+    }
+
+    .nav-button.secondary:hover {
+      background-color: #e3c002; /* 少し暗いゴールドに変化 */
+    }
+  </style>
+	<meta name="google-site-verification" content="2ju4PN6w8wgCH_JEAK9bTKIqd1aKSOGcI3U2kNPspmk" />
+    </head>
+	
+<body　bgcolor="#009EDB">	
+<h1 align="center">Account Engagement (Pardot)の検証ページ　メイン画面</h1>
+<div class="button-container">
+<a href="page1/" class="nav-button">ページ1（web-to-lead 検証ページ）へ移動</a>
+<a href="page2/" class="nav-button secondary">ページ2（ページアクション）へ移動</a>
+  </div>
+<br>
+
+<!-- ==================================================================================================================================================================================================== -->
+
+<!-- FH 検証用-->
+  <div class="form-container">
+    <form action="https://ykmcae.jp-edi.page/l/984341/2023-05-01/bgh2x" method="post">
+      <fieldset>
+        <legend>フォームハンドラーの検証</legend>
+
+        <div class="form-group">
+          <label for="last_name">姓：</label>
+          <input type="text" id="last_name" name="lastname" placeholder="例: 山田">
+        </div>
+
+        <div class="form-group">
+          <label for="first_name">名：</label>
+          <input type="text" id="first_name" name="firstname" placeholder="例: 太郎">
+        </div>
+
+        <div class="form-group">
+          <label for="email">メールアドレス：</label>
+          <input type="email" id="email" name="email" placeholder="例: sample@example.com"　pattern=".+@pdtyktest\.com$">
+        </div>
+
+        <!-- <div class="form-group">
+          <label for="company">会社名：</label>
+          <input type="text" id="company" name="company" placeholder="例: 株式会社サンプル">
+        </div> -->
+
+        <!-- <div class="form-group">
+          <label for="message">テキストエリア：</label>
+          <textarea id="message" name="comme" rows="5" placeholder="ご入力ください"></textarea>
+        </div> -->
+
+<!-- <label>非表示項目：</label> -->
+<input type="hidden" name="hiddenfield">
+
+		<div class="form-group">
+          <label>チェックボックス</label>
+	<input type="checkbox" name="checkboxtest[]" value="オプションA">選択肢A
+	<input type="checkbox" name="checkboxtest[]" value="オプションB">選択肢B
+	<input type="checkbox" name="checkboxtest[]" value="オプションC">選択肢C
+	<input type="checkbox" name="checkboxtest[]" value="オプションD">選択肢D
+	<input type="checkbox" name="checkboxtest[]" value="オプションE">選択肢E
+        </div>
+
+        <input type="submit" value="送信する">
+      </fieldset>
+    </form>
+  </div>
+	
+<!-- ==================================================================================================================================================================================================== -->    
+<!--トラッカードメイン -->
+	    
+<script type='text/javascript'>
+piAId = '985341';
+piCId = '75640';
+piHostname = 'ykmcae.jp-edi.page';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>	    
+</body>
